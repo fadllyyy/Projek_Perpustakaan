@@ -17,30 +17,57 @@ class _RegisterPageState extends State<RegisterPage> {
 
   // Daftar pilihan Jurusan
   final List<String> jurusanList = [
+    'Teknologi Informasi dan Komputer',
     'Teknik Kimia',
     'Teknik Mesin',
+    'Teknik Sipil',
     'Teknik Elektro',
-    'Teknik Informatika',
-    'Sistem Informasi',
+    'Bisnis'
   ];
 
   // Map untuk Prodi berdasarkan Jurusan
   final Map<String, List<String>> prodiMap = {
-    'Teknik Kimia': [
-      'Teknik Kimia Industri',
-      'Teknik Kimia Biologi',
-    ],
-    'Teknik Mesin': [
-      'Teknik Sepeda Motor',
-      'Teknik Kendaraan Berat',
-    ],
-    'Teknik Elektro': [
-      'Teknik Komputer',
-      'Teknik Telekomunikasi',
-    ],
-  };
+  'Teknologi Informasi dan Komputer': [
+  'Teknik Informatika',
+  'Teknik Rekayasa Komputer Jaringan',
+  'Teknik Rekayasa Multimedia',
+  ],
+  'Teknik Kimia': [
+  'Teknologi Rekayasa Kimia Industri',
+  'Teknologi Pengolahan Minyak dan Gas',
+  'Teknologi Kimia',
+  ],
+  'Teknik Mesin': [
+  'Teknologi Rekayasa Manufaktur',
+  'Teknologi Rekayasa Pengelasan dan Fabrikasi',
+  'Teknologi Industri ',
+  'Teknologi Mesin',
+  ],
+  'Teknik Sipil': [
+  'Teknologi Rekayasa Konstruksi Jalan dan Jembatan',
+  'Teknologi Rekayasa Konstruksi Bangunan dan Gedung',
+  'Teknologi Konstruksi Bangunan Air',
+  'Teknologi Konstruksi Jalan dan Jembatan',
+  ],
+  'Teknik Elektro': [
+  'Teknologi Rekayasa Instrumentasi dan Kontrol',
+  'Teknologi Rekayasa Jaringan Telekomunikasi',
+  'Teknologi Rekayasa Pembangkit Energi',
+  'Teknologi Elektronika',
+  'Teknologi Listrik',
+  'Teknologi Telekomunikasi',
+  ],
+  'Bisnis': [
+  'Keuangan Islam Terapan',
+  'Akuntansi Lembaga Keuangan Syariah',
+  'Akuntasi Sektor Publik',
+  'Manajemen Keuangan Sektor Publik',
+  'Akuntansi',
+  'Administrasi Bisnis',
+  ],
+};
 
-  List<String> prodiList = [];
+List<String> prodiList = [];
 
   @override
   void dispose() {
