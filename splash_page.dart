@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 // Mengimpor pustaka Flutter untuk membangun antarmuka pengguna.
 
-import 'package:projek_perpustakaan/pages/login_page.dart';
+import 'package:projekperpustakaan/pages/login_page.dart';
 // Mengimpor halaman login dari proyek perpustakaan.
 
 class SplashPage extends StatefulWidget {
